@@ -22,7 +22,7 @@ public class Game {
         p1.toPlay();
         p2.toPlay();
         if (p1.getHand().equals(p2.getHand())) {
-            System.out.println("Draw");
+            System.out.println(ConsoleColors.YELLOW_BOLD + "Draw" + ConsoleColors.RESET);
             p1.toDraw();
             p2.toDraw();
         } else if (wins.get(p1.getHand()).equals(p2.getHand())) {

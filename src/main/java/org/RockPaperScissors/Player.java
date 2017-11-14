@@ -77,7 +77,9 @@ public class Player {
         opt = input.nextInt();
         switch (opt) {
             case 1:
-                System.out.println(this.name + " played ROCK");
+                System.out.println(ConsoleColors.GREEN_BOLD_BRIGHT +
+                this.name + ConsoleColors.YELLOW_BOLD_BRIGHT + " played ROCK" + 
+                ConsoleColors.RESET);
                 setHand("ROCK");
                 break;
             case 2:
@@ -94,11 +96,15 @@ public class Player {
         }
     }
     public void toLose(){
-        System.out.println(this.name +" Lose");
+        System.out.println(ConsoleColors.RED +
+            this.name + " Lose" + 
+            ConsoleColors.RESET);
         setLose(lose += 1);
     }
     public void toWin(){
-    System.out.println(this.name +" Won!");
+    System.out.println(ConsoleColors.BLUE_BOLD + 
+        this.name +" Won!"
+        + ConsoleColors.RESET);
         setWins(wins+= 1);
     }
     public void toDraw(){

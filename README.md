@@ -2,6 +2,12 @@
 
 Simple Rock Paper and Scissors in Java using MAVEN folder structure
 
+# To build: (MAVEN)
+### Go to the root (where the *pom.xml* is) and use:
+```
+$mvn package
+```
+
 ### The purpose of this project is to register some practices that I am starting to
 use in Java development studies.
 
@@ -27,3 +33,4 @@ Although I like and use Netbeans, this project uses:
  Defines the Player-object that will play the match. Has some scratch
 implementations of methods tha will be used to build a score object (probably)
 it will be stored in a JSON file.
+
